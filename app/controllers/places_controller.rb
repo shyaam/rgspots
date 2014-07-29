@@ -10,6 +10,8 @@ class PlacesController < ApplicationController
   # GET /places/1
   # GET /places/1.json
   def show
+    @comments = @place.comments.all
+    @comment = @place.comments.build
   end
 
   # GET /places/new
