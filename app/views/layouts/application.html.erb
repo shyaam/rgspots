@@ -2,14 +2,17 @@
 <html>
 <head>
   <title>Spots by RailsGirls</title>
+  <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css" />
+	<link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css" />
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render 'layouts/header' %>
-
-<%= yield %>
-
+	<%= render 'layouts/header' %>
+	<div class="container">
+	  <%= yield %>
+	</div>
+	<%= render 'layouts/footer' %>	
 </body>
 </html>
